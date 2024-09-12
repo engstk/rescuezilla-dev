@@ -1,7 +1,7 @@
 # Launch PCMan File Manager in desktop mode, to manage desktop icons and wallpaper
 pcmanfm --desktop &
 
-# network (gnome-network-manger)
+# network (gnome-network-manager)
 nm-applet &
 
 # ALSA volume control widget
@@ -10,5 +10,3 @@ volumeicon &
 # lxpanel (panel/systray)
 (sleep 1 && lxpanel)&
 
-# Start Rescuezilla (as root via PolicyKit) automatically
-rescuezilla &
