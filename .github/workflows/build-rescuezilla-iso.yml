@@ -70,16 +70,6 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: MD5SUM
-          path: completed-artifacts/MD5SUM
-
-      - uses: actions/upload-artifact@v3
-        with:
-          name: SHA1SUM
-          path: completed-artifacts/SHA1SUM
-
-      - uses: actions/upload-artifact@v3
-        with:
           name: rescuezilla_${{env.DEB_VERSION}}-1_all.deb
           path: completed-artifacts/rescuezilla_${{env.DEB_VERSION}}-1_all.deb
 
