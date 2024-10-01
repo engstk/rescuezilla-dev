@@ -75,10 +75,10 @@ apt-get clean
 rm /etc/systemd/system/systemd-timesyncd.service
 ln -s /dev/null /etc/systemd/system/systemd-timesyncd.service
 
-# Replace host system's resolv.conf with Google DNS
+# Replace host system's resolv.conf with DNS from Cloudflare and Google
 cat << EOF > /etc/resolv.conf
+nameserver 1.1.1.1
 nameserver 8.8.8.8
-nameserver 8.8.4.4
 EOF
 
 rm -rf /tmp/*
