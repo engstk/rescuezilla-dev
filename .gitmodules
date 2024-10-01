@@ -1,15 +1,15 @@
 [submodule "src/third-party/util-linux"]
 	path = src/third-party/util-linux
-	url = https://github.com/rescuezilla/util-linux
+	url = https://github.com/engstk/util-linux
 [submodule "src/third-party/partclone-utils"]
 	path = src/third-party/partclone-utils
-	url = https://github.com/rescuezilla/partclone-utils
+	url = https://github.com/engstk/partclone-utils
 [submodule "src/third-party/partclone-nbd"]
 	path = src/third-party/partclone-nbd
-	url = https://github.com/rescuezilla/partclone-nbd
+	url = https://github.com/engstk/partclone-nbd
 [submodule "src/third-party/debootstrap"]
 	path = src/third-party/debootstrap
-	url = https://github.com/rescuezilla/debootstrap
+	url = https://github.com/engstk/debootstrap
 [submodule "src/third-party/partclone-latest"]
 	path = src/third-party/partclone-latest
-	url = https://github.com/Thomas-Tsai/partclone
+	url = https://github.com/engstk/partclone
