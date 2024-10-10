@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := mantic
-.PHONY: all focal lunar jammy mantic noble bionic-i386 deb sfdisk.v2.20.1.amd64 partclone.restore.v0.2.43.amd64 partclone-latest partclone-utils partclone-nbd install test integration-test clean-build-dir clean clean-all
+.PHONY: all focal lunar jammy mantic noble oracular bionic-i386 deb sfdisk.v2.20.1.amd64 partclone.restore.v0.2.43.amd64 partclone-latest partclone-utils partclone-nbd install test integration-test clean-build-dir clean clean-all
 
 # FIXME: Properly specify the build artifacts to allow the GNU make to actually be smart about what gets built and when.
 # FIXME: This lack of specifying dependency graph means requires eg, `make focal` and `make lunar` has to be done as separate invocations
@@ -51,6 +51,12 @@ noble: ARCH=amd64
 noble: CODENAME=noble
 export ARCH CODENAME
 noble: deb sfdisk.v2.20.1.amd64 partclone-latest partclone-utils partclone-nbd $(buildscripts)
+	BASE_BUILD_DIRECTORY=$(BASE_BUILD_DIRECTORY) /usr/bin/time ./src/build.sh	
+
+oracular: ARCH=amd64
+oracular: CODENAME=oracular
+export ARCH CODENAME
+oracular: deb sfdisk.v2.20.1.amd64 partclone-latest partclone-utils partclone-nbd $(buildscripts)
 	BASE_BUILD_DIRECTORY=$(BASE_BUILD_DIRECTORY) /usr/bin/time ./src/build.sh	
 
 # ISO image based on Ubuntu 18.04 Bionic LTS (Long Term Support) 32bit (the last 32bit/i386 Ubuntu LTS release)
@@ -259,6 +265,9 @@ docker-mantic:
 
 docker-noble:
 	docker exec --interactive --workdir=/home/rescuezilla/ builder.container make noble
+
+docker-oracular:
+	docker exec --interactive --workdir=/home/rescuezilla/ builder.container make oracular
 
 docker-jammy:
 	docker exec --interactive --workdir=/home/rescuezilla/ builder.container make jammy
