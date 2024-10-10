@@ -43,9 +43,9 @@ jobs:
         run: make docker-test
 
       - run: make docker-status
-      - name: Make Ubuntu 24.04 LTS (Noble) ISO
-        run: make docker-noble
-      - run: sudo mv build/rescuezilla.amd64.noble.iso completed-artifacts/rescuezilla-${{github.ref_name}}-64bit.noble.iso
+      - name: Make Ubuntu 24.10 (Oracular) ISO
+        run: make docker-oracular
+      - run: sudo mv build/rescuezilla.amd64.oracular.iso completed-artifacts/rescuezilla-${{github.ref_name}}-64bit.oracular.iso
       - run: sudo make clean-all
 
       - name: Create checksums for ISO images
@@ -75,6 +75,6 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: rescuezilla-${{github.ref_name}}-64bit.noble.iso
-          path: completed-artifacts/rescuezilla-${{github.ref_name}}-64bit.noble.iso
+          name: rescuezilla-${{github.ref_name}}-64bit.oracular.iso
+          path: completed-artifacts/rescuezilla-${{github.ref_name}}-64bit.oracular.iso
 
