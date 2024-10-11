@@ -225,6 +225,11 @@ if  [ "$CODENAME" == "noble" ]; then
   rm "$BUILD_DIRECTORY/chroot/partclone_0.3.27-1_amd64.deb"
 fi
 
+if  [ "$CODENAME" == "oracular" ]; then
+  # HACK: similar to noble
+  rm "$BUILD_DIRECTORY/chroot/partclone_0.3.32-1_amd64.deb"
+fi
+
 # Create desktop icon shortcuts
 ln -s /usr/share/applications/rescuezilla.desktop "$BUILD_DIRECTORY/chroot/home/ubuntu/Desktop/rescuezilla.desktop"
 ln -s /usr/share/applications/org.xfce.mousepad.desktop "$BUILD_DIRECTORY/chroot/home/ubuntu/Desktop/mousepad.desktop"
