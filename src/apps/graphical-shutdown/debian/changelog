@@ -1,8 +1,8 @@
-graphical-shutdown (2.5.1.11-1) unstable; urgency=low
+graphical-shutdown (2.5.1.12-1) unstable; urgency=low
 
   * New version.
 
- -- eng.stk <eng.stk@sapo.pt>  Fri, 11 Oct 2024 10:15:00 +0100
+ -- eng.stk <eng.stk@sapo.pt>  Fri, 11 Oct 2024 16:48:00 +0100
 
 graphical-shutdown (2.5.1-1) unstable; urgency=low
 
