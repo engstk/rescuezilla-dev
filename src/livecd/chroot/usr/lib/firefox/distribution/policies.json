@@ -1,9 +1,9 @@
 {
   "policies": {
     "Homepage": {
-      "URL": "https://patreon.com/join/rescuezilla",
-      "Additional": [ "https://rescuezilla.com/?v=VERSION-SUBSTITUTED-BY-BUILD-SCRIPT" ]
+      "URL": "https://search.brave.com/"
     },
+    "DontCheckDefaultBrowser": true,
     "DisableTelemetry": true, 
     "DisableProfileImport": true,
     "OfferToSaveLogins": false,
@@ -13,18 +13,9 @@
     "Preferences": {
       "browser.tabs.warnOnClose": false
     },
-    "Bookmarks": [
-      {
-        "Title": "Patreon",
-        "URL": "https://patreon.com/join/rescuezilla",
-        "Placement": "toolbar"
-      },
-      {
-        "Title": "Help",
-        "URL": "https://rescuezilla.com/help",
-        "Placement": "toolbar"
-      }],
-    "DisplayBookmarksToolbar": true,
-    "NoDefaultBookmarks": true
+    "Bookmarks": {
+      "DisplayBookmarksToolbar": false,
+      "NoDefaultBookmarks": true
+    }
   }
 }

@@ -267,7 +267,7 @@ SUBSTITUTIONS=(
     "$BUILD_DIRECTORY/image/boot/grub/theme/theme.txt"
     # Firefox browser homepage query-string, to be able to provide a "You are using an old version. Please update."
     # message when users open the web browser with a (inevitably) decades old version.
-    "$BUILD_DIRECTORY/chroot/usr/lib/firefox/distribution/policies.json"
+    #"$BUILD_DIRECTORY/chroot/usr/lib/firefox/distribution/policies.json"
 )
 for file in "${SUBSTITUTIONS[@]}"; do
     # Substitute version into file
