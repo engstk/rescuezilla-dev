@@ -1,3 +1,9 @@
+graphical-shutdown (2.5.1.17-1) unstable; urgency=low
+
+  * New version.
+
+ -- eng.stk <eng.stk@sapo.pt>  Thu, 16 Jan 2025 17:14:00 +0000
+
 graphical-shutdown (2.5.1-1) unstable; urgency=low
 
   * New version. For full changes: See https://raw.githubusercontent.com/rescuezilla/rescuezilla/master/CHANGELOG
