@@ -187,7 +187,7 @@ class ImageExplorerManager:
             self.duration_label.set_label("")
             self.duration_label.set_visible(False)
             self.set_support_information_linkbutton_visible(False)
-            self.set_patreon_call_to_action_visible(True)
+            self.set_patreon_call_to_action_visible(False)
 
     def _post_backup_image_mount_callback(self, is_success, message=""):
         if not is_success:
@@ -201,7 +201,7 @@ class ImageExplorerManager:
             self.duration_label.set_visible(True)
             self.set_mounted_state(True)
             self.set_support_information_linkbutton_visible(False)
-            self.set_patreon_call_to_action_visible(True)
+            self.set_patreon_call_to_action_visible(False)
 
     @staticmethod
     # This `man pgrep` patterns needs to be kept in sync with the process being used.
@@ -329,7 +329,7 @@ class ImageExplorerManager:
     def _on_image_partition_mount_completed_callback(self, is_success):
         if is_success:
             self.set_support_information_linkbutton_visible(False)
-            self.set_patreon_call_to_action_visible(True)
+            self.set_patreon_call_to_action_visible(False)
             self.set_parts_of_image_explorer_page_sensitive(False)
         else:
             self.set_support_information_linkbutton_visible(True)
