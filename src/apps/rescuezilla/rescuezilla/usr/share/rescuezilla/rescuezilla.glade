@@ -459,22 +459,6 @@
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkLinkButton" id="welcome_patreon_linkbutton">
-                                        <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                        <property name="can-focus">False</property>
-                                        <property name="receives-default">True</property>
-                                        <property name="halign">center</property>
-                                        <property name="relief">none</property>
-                                        <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                        <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                      </object>
-                                      <packing>
-                                        <property name="expand">False</property>
-                                        <property name="fill">False</property>
-                                        <property name="position">4</property>
-                                      </packing>
-                                    </child>
-                                    <child>
                                       <object class="GtkLinkButton" id="welcome_support_linkbutton">
                                         <property name="label" translatable="yes">Need help? Start by checking the Rescuezilla frequently asked questions, then proceed to the Rescuezilla forum.</property>
                                         <property name="can-focus">False</property>
@@ -2503,23 +2487,6 @@ You may only use letters, numbers, and dashes in your backup name.</property>
                                             <property name="position">2</property>
                                           </packing>
                                         </child>
-                                        <child>
-                                          <object class="GtkLinkButton" id="backup_step8_patreon_linkbutton">
-                                            <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                            <property name="visible">True</property>
-                                            <property name="can-focus">False</property>
-                                            <property name="receives-default">True</property>
-                                            <property name="halign">center</property>
-                                            <property name="relief">none</property>
-                                            <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                            <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                          </object>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">True</property>
-                                            <property name="position">3</property>
-                                          </packing>
-                                        </child>
                                       </object>
                                     </child>
                                     <child type="label">
@@ -2662,22 +2629,6 @@ You may only use letters, numbers, and dashes in your backup name.</property>
                                             <property name="expand">False</property>
                                             <property name="fill">True</property>
                                             <property name="position">2</property>
-                                          </packing>
-                                        </child>
-                                        <child>
-                                          <object class="GtkLinkButton" id="backup_step9_patreon_linkbutton">
-                                            <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                            <property name="can-focus">False</property>
-                                            <property name="receives-default">True</property>
-                                            <property name="halign">center</property>
-                                            <property name="relief">none</property>
-                                            <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                            <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                          </object>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">True</property>
-                                            <property name="position">3</property>
                                           </packing>
                                         </child>
                                         <child>
@@ -4447,23 +4398,6 @@ You may only use letters, numbers, and dashes in your backup name.</property>
                                                 <property name="position">2</property>
                                               </packing>
                                             </child>
-                                            <child>
-                                              <object class="GtkLinkButton" id="restore_step6_patreon_linkbutton">
-                                                <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                                <property name="visible">True</property>
-                                                <property name="can-focus">True</property>
-                                                <property name="receives-default">True</property>
-                                                <property name="halign">center</property>
-                                                <property name="relief">none</property>
-                                                <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                                <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                              </object>
-                                              <packing>
-                                                <property name="expand">False</property>
-                                                <property name="fill">True</property>
-                                                <property name="position">3</property>
-                                              </packing>
-                                            </child>
                                           </object>
                                         </child>
                                         <child type="label">
@@ -4606,22 +4540,6 @@ You may only use letters, numbers, and dashes in your backup name.</property>
                                                 <property name="expand">False</property>
                                                 <property name="fill">True</property>
                                                 <property name="position">2</property>
-                                              </packing>
-                                            </child>
-                                            <child>
-                                              <object class="GtkLinkButton" id="restore_step7_patreon_linkbutton">
-                                                <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                                <property name="can-focus">False</property>
-                                                <property name="receives-default">True</property>
-                                                <property name="halign">center</property>
-                                                <property name="relief">none</property>
-                                                <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                                <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                              </object>
-                                              <packing>
-                                                <property name="expand">False</property>
-                                                <property name="fill">True</property>
-                                                <property name="position">3</property>
                                               </packing>
                                             </child>
                                             <child>
@@ -5733,23 +5651,6 @@ You may only use letters, numbers, and dashes in your backup name.</property>
                                                 <property name="position">1</property>
                                               </packing>
                                             </child>
-                                            <child>
-                                              <object class="GtkLinkButton" id="verify_step3_patreon_linkbutton">
-                                                <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                                <property name="visible">True</property>
-                                                <property name="can-focus">True</property>
-                                                <property name="receives-default">True</property>
-                                                <property name="halign">center</property>
-                                                <property name="relief">none</property>
-                                                <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                                <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                              </object>
-                                              <packing>
-                                                <property name="expand">False</property>
-                                                <property name="fill">True</property>
-                                                <property name="position">2</property>
-                                              </packing>
-                                            </child>
                                           </object>
                                         </child>
                                         <child type="label">
@@ -5909,22 +5810,6 @@ You may only use letters, numbers, and dashes in your backup name.</property>
                                                 <property name="expand">False</property>
                                                 <property name="fill">True</property>
                                                 <property name="position">3</property>
-                                              </packing>
-                                            </child>
-                                            <child>
-                                              <object class="GtkLinkButton" id="verify_step4_patreon_linkbutton">
-                                                <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                                <property name="can-focus">True</property>
-                                                <property name="receives-default">True</property>
-                                                <property name="halign">center</property>
-                                                <property name="relief">none</property>
-                                                <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                                <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                              </object>
-                                              <packing>
-                                                <property name="expand">False</property>
-                                                <property name="fill">True</property>
-                                                <property name="position">4</property>
                                               </packing>
                                             </child>
                                             <child>
@@ -7136,23 +7021,6 @@ To use the "imaging" wizards, click &lt;b&gt;Back&lt;/b&gt; and select &lt;b&gt;
                                             <property name="position">2</property>
                                           </packing>
                                         </child>
-                                        <child>
-                                          <object class="GtkLinkButton" id="clone_step6_patreon_linkbutton">
-                                            <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                            <property name="visible">True</property>
-                                            <property name="can-focus">True</property>
-                                            <property name="receives-default">True</property>
-                                            <property name="halign">center</property>
-                                            <property name="relief">none</property>
-                                            <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                            <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                          </object>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">True</property>
-                                            <property name="position">3</property>
-                                          </packing>
-                                        </child>
                                       </object>
                                     </child>
                                     <child type="label">
@@ -7295,22 +7163,6 @@ To use the "imaging" wizards, click &lt;b&gt;Back&lt;/b&gt; and select &lt;b&gt;
                                             <property name="expand">False</property>
                                             <property name="fill">True</property>
                                             <property name="position">2</property>
-                                          </packing>
-                                        </child>
-                                        <child>
-                                          <object class="GtkLinkButton" id="clone_step7_patreon_linkbutton">
-                                            <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                            <property name="can-focus">True</property>
-                                            <property name="receives-default">True</property>
-                                            <property name="halign">center</property>
-                                            <property name="relief">none</property>
-                                            <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                            <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                          </object>
-                                          <packing>
-                                            <property name="expand">False</property>
-                                            <property name="fill">True</property>
-                                            <property name="position">3</property>
                                           </packing>
                                         </child>
                                         <child>
@@ -8595,22 +8447,6 @@ Did you know: Rescuezilla works with virtual machine images used by VirtualBox, 
                                                 <property name="expand">False</property>
                                                 <property name="fill">True</property>
                                                 <property name="position">4</property>
-                                              </packing>
-                                            </child>
-                                            <child>
-                                              <object class="GtkLinkButton" id="image_explorer_step3_patreon_linkbutton">
-                                                <property name="label" translatable="yes">Consider contributing $1/month on the crowdfunding website Patreon so Rescuezilla can continue to be developed.</property>
-                                                <property name="can-focus">True</property>
-                                                <property name="receives-default">True</property>
-                                                <property name="halign">center</property>
-                                                <property name="relief">none</property>
-                                                <property name="uri">https://www.patreon.com/join/rescuezilla</property>
-                                                <signal name="pressed" handler="open_url_as_non_root" swapped="no"/>
-                                              </object>
-                                              <packing>
-                                                <property name="expand">False</property>
-                                                <property name="fill">True</property>
-                                                <property name="position">5</property>
                                               </packing>
                                             </child>
                                           </object>

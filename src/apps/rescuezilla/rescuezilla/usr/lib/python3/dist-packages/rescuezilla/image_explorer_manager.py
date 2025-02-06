@@ -70,8 +70,7 @@ class ImageExplorerManager:
     def __init__(self,
                  builder,
                  image_explorer_partition_selection_list,
-                 set_support_information_linkbutton_visible,
-                 set_patreon_call_to_action_visible):
+                 set_support_information_linkbutton_visible):
         self.builder = builder
         self.image_explorer_in_progress = False
         self.is_partition_mounted = False
@@ -81,7 +80,6 @@ class ImageExplorerManager:
         self.restore_partition_treeview = self.builder.get_object("restore_step4_image_partition_treeview")
         # FIXME: Remove need to passing the support info / patreon visibility functions for improved abstraction
         self.set_support_information_linkbutton_visible = set_support_information_linkbutton_visible
-        self.set_patreon_call_to_action_visible = set_patreon_call_to_action_visible
         # proc dictionary
         self.proc = collections.OrderedDict()
         self.requested_stop_lock = threading.Lock()
@@ -181,13 +179,11 @@ class ImageExplorerManager:
             self.duration_label.set_label("")
             self.duration_label.set_visible(False)
             self.set_support_information_linkbutton_visible(True)
-            self.set_patreon_call_to_action_visible(False)
         else:
             self.set_mounted_state(False)
             self.duration_label.set_label("")
             self.duration_label.set_visible(False)
             self.set_support_information_linkbutton_visible(False)
-            self.set_patreon_call_to_action_visible(False)
 
     def _post_backup_image_mount_callback(self, is_success, message=""):
         if not is_success:
@@ -195,13 +191,11 @@ class ImageExplorerManager:
             self.duration_label.set_label("")
             self.duration_label.set_visible(False)
             self.set_support_information_linkbutton_visible(True)
-            self.set_patreon_call_to_action_visible(False)
         else:
             self.duration_label.set_label(message)
             self.duration_label.set_visible(True)
             self.set_mounted_state(True)
             self.set_support_information_linkbutton_visible(False)
-            self.set_patreon_call_to_action_visible(False)
 
     @staticmethod
     # This `man pgrep` patterns needs to be kept in sync with the process being used.
@@ -329,11 +323,9 @@ class ImageExplorerManager:
     def _on_image_partition_mount_completed_callback(self, is_success):
         if is_success:
             self.set_support_information_linkbutton_visible(False)
-            self.set_patreon_call_to_action_visible(False)
             self.set_parts_of_image_explorer_page_sensitive(False)
         else:
             self.set_support_information_linkbutton_visible(True)
-            self.set_patreon_call_to_action_visible(False)
             self.set_parts_of_image_explorer_page_sensitive(True)
 
     def _do_unmount_wrapper(self, please_wait_popup, callback, destination_path):
