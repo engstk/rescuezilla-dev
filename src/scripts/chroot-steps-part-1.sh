@@ -162,7 +162,7 @@ pkgs_specific_to_ubuntu2410_oracular=(
 )
 
 pkgs_specific_to_ubuntu2404_noble=(
-                       "linux-generic"
+                       "linux-generic-hwe-24.04"
                        "xserver-xorg"
                        "xserver-xorg-video-all"
                        "xserver-xorg-video-intel"
