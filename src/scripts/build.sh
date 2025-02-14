@@ -221,6 +221,9 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
+# Download rustdek .deb
+wget https://github.com/rustdesk/rustdesk/releases/download/1.3.7/rustdesk-1.3.7-x86_64.deb -P "$BUILD_DIRECTORY/chroot/"
+
 if  [ "$CODENAME" == "noble" ]; then
   # HACK: Delete partclone deb for Ubuntu 24.04 (LTS) as current compiled partclone 0.3.27-1 is "older" than "0.3.27+repack-1"
   # HACK: Find better way to do this
